@@ -1,16 +1,47 @@
-# React + Vite
+# Indian Sign Language Translator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application that converts spoken English from YouTube videos into Indian Sign Language (ISL) letter representations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* YouTube video processing
+* Audio extraction using yt-dlp
+* Speech-to-text transcription with Deepgram API
+* Real-time word synchronization with video playback
+* Indian Sign Language letter visualization
+* Responsive UI built with React
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the ESLint configuration
+* React
+* CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+
+* Node.js
+* Express.js
+
+### APIs & Tools
+
+* Deepgram API
+* yt-dlp
+
+## Challenges Faced
+
+* Synchronizing transcript words with video timestamps
+* Handling dynamic image rendering issues in React
+* Managing video and audio downloads efficiently
+* Preventing API keys and downloaded media from being pushed to GitHub
+
+## Future Improvements
+
+* Full ISL sentence animations instead of letter-by-letter signs
+* Live video upload support
+* Better transcript accuracy
+* Searchable sign language dictionary
+
+## Author
+
+Ghanesh Goyal
